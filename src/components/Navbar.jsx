@@ -25,7 +25,7 @@ const Navbar = () => {
             tabIndex={0}
             className="menu menu-sm dropdown-content bg-white rounded-box z-[1] mt-3 w-52 p-2 shadow"
           >
-            <ul className="menu menu-horizontal  px-1 ">
+            <ul className="menu menu-vertical  px-1 ">
               <li>
                 <a href="">Home</a>
               </li>
@@ -47,7 +47,7 @@ const Navbar = () => {
         </div>
         <a className="flex items-center gap-1 md:text-2xl font-bold">
           <img src="" className="h-7" alt="" />
-          Service Review
+          Khushi
         </a>
       </div>
       <div className="navbar-center hidden lg:flex">
@@ -72,9 +72,9 @@ const Navbar = () => {
       </div>
       <div className="md:block hidden"></div>
       <div className="navbar-end">
-        <Link className="py-2 mr-2 text-white bg-[#0F1035] font-semibold hover:bg-[#5f1a89] rounded-full px-5  hover:border-white ">
+        <a href="/Resume_of_Khushi_Akter.pdf" download="Resume_of_Khushi_Akter.pdf" className="py-2 mr-2 text-white bg-[#0F1035] font-semibold hover:bg-[#5f1a89] rounded-full px-5  hover:border-white ">
          Download 
-        </Link>
+        </a>
       </div>
     </div>
   );

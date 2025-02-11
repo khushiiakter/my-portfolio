@@ -5,23 +5,23 @@ const AboutMe = () => {
       title: "Education",
       description:
         "I'm studying for a Bachelor of Science (Pass) in the 1st year at National University and I am focusing on technologies like React, JavaScript, Mongodb,and Node.js",
-      icon: "📘", // Replace this with an appropriate icon if using an image
+      icon: "📘", 
     },
     {
       title: "Problem-Solving",
       description: "I approach challenges with a logical/systematic mindset.",
-      icon: "🧠", // Replace this with an appropriate icon if using an image
+      icon: "🧠", 
     },
     {
       title: "Experience",
       description: "I have a diverse portfolio of projects.",
-      icon: "💼", // Replace this with an appropriate icon if using an image
+      icon: "💼", 
     },
     {
       title: "Technical Skills",
       description:
         "As a Frontend Web Developer, I specialize in React JS, html, Node.js, firebase, css and Tailwind CSS.",
-      icon: "💻", // Replace this with an appropriate icon if using an image
+      icon: "💻", 
     },
   ];
 

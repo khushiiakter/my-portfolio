@@ -1,38 +1,57 @@
 import { motion } from "framer-motion";
 
-import movie from "../assets/movie.png";
+import earnly from "../assets/earnly.png";
 import Mountain from "../assets/mountain.png";
-import service from "../assets/service.png";
-import dream from "../assets/Screenshot 2025-01-05 002427.png";
 import { FaGithub, FaLink } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Projects = () => {
   const projects = [
     {
+      id: 1,
       title: "Movie Portal",
-      image: `${movie}`,
-      github: "https://github.com/example/project1",
+      image: `https://i.ibb.co.com/67VnWmkD/Screenshot-2025-02-05-152815.png`,
+      github: "https://github.com/khushiiakter/Movie-Portal",
       liveLink: "https://assignment-10-bf625.web.app/",
+      techStack: "React.js,Javascript, Tailwind CSS, MongoDB , Node.js, Express, JWT, html5, Firebase",
+      description: "This website is a dynamic movie portal designed to enhance your cinematic journey. Explore a vast database of movies, read real user reviews, and enjoy personalized recommendations based on your interests. With a sleek, dark-themed interface and cutting-edge features, MovieZone is your ultimate destination for the latest trends in cinema",
+      challenges: "Implementing secure authentication and API data fetching.",
+      improvements: "Adding more movie filters and enhancing UI.",
     },
     {
-      title: "Mountain Treks",
-      image: `${Mountain}`,
-      github: "https://github.com/example/project2",
-      liveLink: "https://assignment-9-e93f8.web.app/",
-    },
-    {
+      id: 2,
       title: "Service Review",
-      image: `${service}`,
-      github: "https://github.com/example/project2",
+      image: `https://i.ibb.co.com/XfQJrj39/Screenshot-2025-02-05-152922.png`,
+      github: "https://github.com/khushiiakter/Service-Review",
       liveLink: "https://assignment-11-eb26e.web.app/",
+      techStack: "React.js,Javascript, Tailwind CSS, MongoDB , Node.js, Express, JWT, html5, Firebase",
+      description: "Service Review System is a full-stack application designed to provide users with a platform for exploring, reviewing, and sharing feedback on various services. It aims to empower users with trusted information and insights to make informed decisions.",
+      challenges: "Ensuring real-time updates.",
+      improvements: "Enhancing map integration and adding more routes.",
     },
     {
-      title: "Dream_11",
-      image: `${dream}`,
-      github: "https://github.com/example/project2",
-      liveLink: "https://stately-youtiao-d8f56d.netlify.app/",
-    },
-    // Add more projects as needed
+        id: 3,
+        title: "Earnly",
+        image: `${earnly}`,
+        github: "https://github.com/khushiiakter/Earnly",
+        liveLink: "https://earnly-fad73.web.app/",
+        techStack: "React.js, Javascript, Tailwind CSS, MongoDB, Node.js, Express, Firebase, JWT, Stripe, HTML5",
+        description: "The Micro Tasking and Earning Platform is designed to provide users with opportunities to complete small tasks and earn money. The platform accommodates 3 distinct roles: Worker, Buyer, and Admin. Each role is tailored with specific functionalities to ensure seamless task management, task creation, and platform administration.",
+        challenges: "Ensuring real-time updates and dashboard updates.",
+        improvements: "Enhancing map integration and adding more routes.",
+      },
+      {
+        id: 4,
+        title: "Mountain Treks",
+        image: `${Mountain}`,
+        github: "https://github.com/khushiiakter/Mountain-Treks",
+        liveLink: "https://assignment-9-e93f8.web.app/",
+        techStack: "React.js, Javascript, Tailwind CSS, HTML5, Firebase",
+        description: "Welcome to Mountain Treks, a platform designed to help adventure enthusiasts plan and book unforgettable hiking experiences. Whether you're looking for serene escapes or thrilling expeditions, we've got you covered.",
+        challenges: "Ensuring real-time updates and managing user bookings.",
+        improvements: "Enhancing map integration and adding more routes.",
+      },
+    
   ];
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -95,8 +114,10 @@ const Projects = () => {
               {/* Overlay on Hover */}
               <div className="absolute inset-0 bg-black/70 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="text-white text-center space-y-4 slide-in">
-                  <h3 className="text-lg font-semibold">{project.title}</h3>
-                  <div className="flex text-center gap-4">
+                  <h3 className="text-2xl mb-2 font-semibold">{project.title}</h3>
+                  <Link to={`/projects/${project.id}`} ><button className="btn-sm btn">View More</button></Link>
+                  
+                  <div  className="flex text-center justify-center gap-4">
                     {/* GitHub Icon */}
                     <a
                       href={project.github}

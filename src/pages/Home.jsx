@@ -1,3 +1,4 @@
+import About2 from "../components/About2";
 import AboutMe from "../components/AboutMe";
 import Banner from "../components/Banner";
 import Contact from "../components/Contact";
@@ -13,16 +14,19 @@ const Home = () => {
                 <Navbar></Navbar>
             </div>
             <Banner></Banner>
-            <div className="container mx-auto py-6">
+            {/* <div className="container mx-auto py-6">
                 <AboutMe></AboutMe>
-            </div>
+            </div> */}
             <div className="container mx-auto py-6">
+               <About2></About2>
+            </div>
+            <div className="container  mx-auto py-6">
                 <Skills></Skills>
             </div>
             <div className="container mx-auto py-6">
                 <Projects></Projects>
             </div>
-            <div className="container border mx-auto py-10">
+            <div className="container  mx-auto py-10">
                <Contact></Contact>
             </div>
             

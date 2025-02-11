@@ -23,15 +23,16 @@ const Skills = () => {
 
   return (
     <section id="skills"
-      className=" py-10"
+      className=" py-4"
       style={{
         fontFamily: "'Inter', sans-serif",
       }}
     >
-      <div className="border py-16 px-6">
-        <h2 className=" text-6xl font-extrabold text-center text-[#0F1035] underline mb-20">
+      <div className=" py-12 px-6">
+        <h2 className="mb-6 text-6xl font-extrabold text-center text-[#0F1035] underline ">
           Skills
         </h2>
+        <p className="max-w-[640px] md:text-base text-sm font-semibold text-gray-800 text-center mx-auto mb-12">Showcasing my expertise in tools like HTML, CSS,JavaScript, React, Node.js, and more, this dynamic layout highlights the skills that power my development journey.</p>
         <div className="flex justify-center py-8 items-center gap-8 flex-wrap">
           {skills.map((skill, index) => (
             <div

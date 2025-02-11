@@ -30,19 +30,19 @@ const Contact = () => {
       <h2 className="text-6xl underline font-bold text-center mb-16 text-[#0F1035]">
         Contact <span className="text-[#5f1a89]">Me</span>
       </h2>
-      <div className="flex md:flex-row flex-col p-7 rounded-2xl bg-gradient-to-r from-[#0F1035] to-[#5f1a89] shadow-lg max-w-4xl mx-auto  gap-6  justify-between">
+      <div className="flex md:flex-row flex-col p-7 rounded-2xl bg-gradient-to-r from-[#0F1035] to-[#5f1a89] shadow-lg max-w-[930px] mx-auto  gap-6  justify-between">
         <div className=" md:w-2/5 rounded-2xl text-gray-400 flex flex-col gap-3 font-semibold items-center justify-between">
           <div className="w-[220px]  rounded-3xl text-center  ">
             <img
-              src={profile} // Replace with your image URL
+              src={profile} 
               alt="Profile"
               className="object-cover w-full h-full rounded-2xl"
             />
           </div>
           <h3 className="text-2xl text-gray-300 font-bold">Khushi Akter Hena</h3>
           <div className="space-y-2 ml-2">
-            <p>Email: rkjia1311@gmail.com</p>
-            <p>Phone: 01538422108</p>
+            <p>Email: khushiiakterhena@gmail.com</p>
+            <p>Phone: +8801538422108</p>
             <p>Location: Dhaka, Bangladesh</p>
           </div>
         </div>
