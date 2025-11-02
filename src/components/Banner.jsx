@@ -1,4 +1,4 @@
-import profile from "../assets/profile.JPG"
+import profile2 from "../assets/profile.JPG"
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa6";
@@ -11,7 +11,7 @@ const Banner = () => {
       <div className="avatar mt-4 mb-3">
         <div className="w-[180px] rounded-full ring ring-[#0F1035] ">
           <img
-            src={profile} // Replace with your image URL
+            src={profile2}
             alt="Profile"
           />
         </div>
