@@ -5,6 +5,7 @@ import css from "../assets/icons8-css3-48.png"
 import react from "../assets/react.png";
 import mongo from "../assets/icons8-mongo-db-48.png";
 import firebase from "../assets/icons8-firebase-48.png";
+import nextjs from "../assets/nextjs.svg";
 
 // import tail from "../assets/png-transparent-tailwind-css-hd-logo.png"
 const Skills = () => {
@@ -12,12 +13,14 @@ const Skills = () => {
     
     { name: "HTML5", image: "https://i.ibb.co.com/Lzs5mvf/icons8-html-48.png" },
     { name: "JavaScript", image: `${js}` },
-    
+    { name: "CSS", image: `${css}`},
+    { name: "React", image: `${react}` },
+    { name: "Next.js", image: `${nextjs}` },
     { name: "Node.js", image:`${node}`},
     { name: "Firebase", image: `${firebase}`},
     { name: "MongoDB", image: `${mongo}` },
-    { name: "React", image: `${react}` },
-    { name: "CSS", image: `${css}`},
+    
+    
     // { name: "Tailwind", image: `${tail}` },
   ];
 

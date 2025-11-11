@@ -1,5 +1,5 @@
 import { useState } from "react";
-import profile from "../assets/profile.JPG";
+import profile2 from "../assets/profile2.jpg"
 const Contact = () => {
   const [result, setResult] = useState("");
 
@@ -34,7 +34,7 @@ const Contact = () => {
         <div className=" md:w-2/5 rounded-2xl text-gray-400 flex flex-col gap-3 font-semibold items-center justify-between">
           <div className="w-[220px]  rounded-3xl text-center  ">
             <img
-              src={profile} 
+              src={profile2}
               alt="Profile"
               className="object-cover w-full h-full rounded-2xl"
             />
